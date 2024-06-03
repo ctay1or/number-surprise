@@ -5,7 +5,6 @@ var box3 = document.querySelector(".box-3");
 
 
 //When user presses the "1", "2" and "3" keys, the text changes.
-
 document.addEventListener("keydown", function (e) {
     var key = e.key;
     if (key === "1") {
@@ -17,3 +16,11 @@ document.addEventListener("keydown", function (e) {
     }
     });
 
+var clear = document.querySelector("button");
+
+//When user presses the clear button, text returns.
+document.addEventListener("click", function () {
+    box1.innerText = "1";
+    box2.innerText = "2";
+    box3.innerText = "3";
+});
